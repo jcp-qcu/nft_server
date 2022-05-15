@@ -4,6 +4,7 @@ import cors from "cors";
 
 import 'dotenv/config'
 
+
 const app = express();
 
 let corsOptions = {
@@ -14,7 +15,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5050;
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
