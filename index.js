@@ -15,7 +15,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const PORT = process.env.PORT || 5050;
+const PORT = 5000;
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
